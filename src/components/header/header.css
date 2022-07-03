@@ -100,4 +100,13 @@ header{
   .bgicon{
     width: 9rem;
   }
+
+  .me{
+    padding: 0;
+  }
+
+  .me img{
+    width: 65%;
+    margin: 0 auto;
+  }
 }
