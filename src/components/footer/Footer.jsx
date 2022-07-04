@@ -3,11 +3,14 @@ import './footer.css'
 import { FaFacebook } from 'react-icons/fa'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { AiFillTwitterCircle } from 'react-icons/ai'
+import LOGO from '../../assets/logo-dgr.png'
 
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className='footer__logo'>Douglas</a>
+      <div className="logo__footer">
+        <img src={LOGO} className="logo-dgr" alt="Logo" />
+      </div>
 
       <ul className='permalinks'>
         <li><a href="#">Home</a></li>
@@ -24,7 +27,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__copyright">
-        <small>&copy; rdouggg</small>
+        <small>&copy; Douglas Ghiraldello Rodrigues</small>
       </div>
     </footer>
   )

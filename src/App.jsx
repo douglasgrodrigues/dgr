@@ -10,6 +10,9 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
 const App = () => {
+  fetch(process.env.REACT_APP_API_URL || 'http://localhost:8080/api/v1')
+    .then(() => console.log("Ok"))
+    .catch(() => console.log("Error"))
   return (
     <>
       <Header />

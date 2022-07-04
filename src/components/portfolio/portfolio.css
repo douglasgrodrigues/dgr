@@ -5,9 +5,9 @@
 }
 
 .portfolio__item{
-  background: var(--color-bg-variant);
+  background: rgb(7, 8, 16, 0.5);
   padding: 1.2rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
   border: 1px solid transparent;
   transition: var(--transition);
 }

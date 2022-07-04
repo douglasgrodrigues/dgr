@@ -1,7 +1,12 @@
 header{
   height: 100vh;
-  padding-top: 7rem;
+  padding-top: 4rem;
   overflow: hidden;
+  background-color: black;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-image: url(../../assets/bg-header.jpg);
 }
 
 .bgicon{
@@ -17,8 +22,8 @@ header{
 }
 
 @keyframes example {
-  0%   {top:-15rem;}
-  75%  {top:0;}
+  0%   {left:-15rem;}
+  100%  {left:0;}
 }
 
 .header__container{
@@ -56,14 +61,16 @@ header{
 /* ============== Header ME ============= */
 .me{
   background: linear-gradient(var(--color-primary), transparent);
-  width: 22rem;
+  border-radius: 11rem 2rem 10rem 2rem;
+  /* width: 22rem;
   height: 30rem;
   position: absolute;
   left: calc(50% - 11rem);
   margin-top: 4rem;
-  border-radius: 12rem 12rem 0 0;
   overflow: hidden;
-  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  padding: 5rem 1.5rem 1.5rem 1.5rem; */
+  position: absolute;
+  margin-top: -6rem;
 }
 
 /* ============== Scroll down ============= */
@@ -92,6 +99,10 @@ header{
     height: 100vh;
   }
 
+  .header__container h1{
+    font-size: 1.5rem;
+  }
+
   .header__socials,
   .scroll__down{
     display: none;
@@ -103,6 +114,8 @@ header{
 
   .me{
     padding: 0;
+    margin: 0;
+    bottom: 20%;
   }
 
   .me img{

@@ -1,13 +1,19 @@
 footer{
-  background: var(--color-primary);
+  background: var(--color-darkgray);
   padding: 3rem 0;
   text-align: center;
   font-size: 0.9rem;
   margin-top: 7rem;
 }
 
+.logo__footer{
+  width: 8rem;
+    position: absolute;
+    left: 3rem;
+}
+
 footer a{
-  color: var(--color-bg);
+  color: var(--color-white);
 }
 
 .footer__logo{
@@ -33,7 +39,7 @@ footer a{
 }
 
 .footer__socials a{
-  background: var(--color-bg);
+  background: var(--color-primary);
   color: var(--color-white);
   padding: 0.8rem;
   border-radius: 0.7rem;
@@ -43,13 +49,12 @@ footer a{
 
 .footer__socials a:hover{
   background: transparent;
-  color: var(--color-bg);
   border-color: var(--color-bg);
 }
 
 .footer__copyright{
   margin-bottom: 4rem;
-  color: var(--color-bg);
+  color: var(--color-white);
 }
 
 /* ======== Media querys =========== */
@@ -61,5 +66,11 @@ footer a{
 
   .footer__socials{
     margin-bottom: 2.6rem;
+  }
+
+  .logo__footer{
+    width: 6rem;
+    left: 1rem;
+    margin-top: -5rem;
   }
 }
