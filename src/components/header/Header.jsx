@@ -5,14 +5,14 @@ import ME from '../../assets/me.svg'
 import bgicon from '../../assets/bg-icon.svg'
 import HeaderSocials from './HeaderSocials'
 import LOGO from '../../assets/logo-dgr.png'
+import background from '../../assets/bg-header.jpg'
 
 const Header = () => {
   return (
     <header>
-      {/* <div className="logo__header">
-        <img src={LOGO} className="logo-dgr" alt="Logo" />
-      </div> */}
-      {/* <img className='bgicon fadeImg' src={bgicon} /> */}
+      <div className="background-header">
+        <img src={background} className="logo-dgr" alt="Logo" />
+      </div>
       <div className="container header__container">
         <h5>Hello I'm</h5>
         <h1>Douglas Rodrigues</h1>
@@ -20,7 +20,7 @@ const Header = () => {
         <CTA />
         <HeaderSocials />
 
-        <div className="me fadeImg">
+        <div className="me">
           <img src={ME} alt="me" />
         </div>
 

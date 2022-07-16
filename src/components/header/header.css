@@ -3,10 +3,20 @@ header{
   padding-top: 4rem;
   overflow: hidden;
   background-color: black;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  background-image: url(../../assets/bg-header.jpg);
+  transition: 1s;
+}
+
+.background-header > img{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  animation-name: surgir;
+  animation-duration: 4s;
+}
+
+@keyframes surgir {
+  0%   {top:50vh;}
+  100%  {top:4rem;}
 }
 
 .bgicon{
