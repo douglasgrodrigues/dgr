@@ -7,6 +7,9 @@ import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/portfolio6.jpg'
 
+import OQUEST from '../../assets/oquestionador.png'
+import CARDIO from '../../assets/cardio4d.png'
+
 const data = [
   {
     id: 1,
@@ -52,6 +55,23 @@ const data = [
   }
 ]
 
+const data2 = [
+  {
+    id: 1,
+    image: OQUEST,
+    title: 'O Questionador',
+    github: '#',
+    demo: 'https://www.oquestionador.com/',
+  },
+  {
+    id: 2,
+    image: CARDIO,
+    title: 'Cardio 4d',
+    github: '#',
+    demo: 'https://www.cardio4d.com/'
+  },
+]
+
 const Portfolio = () => {
   return (
     <section id='portfolio'>
@@ -74,6 +94,28 @@ const Portfolio = () => {
             )
           })
         }
+      </div>
+
+      <div className="more-projects">
+        <h2>Other projects</h2>
+
+        <div className="container portfolio__container">
+          {
+            data2.map(({ id, image, title, github, demo }) => {
+              return (
+                <article key={id} className="portfolio__item">
+                  <div className="portfolio__item-image">
+                    <img src={image} alt={title} />
+                  </div>
+                  <h3>{title}</h3>
+                  <div className="portfolio__item-cta">
+                    <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                  </div>
+                </article>
+              )
+            })
+          }
+        </div>
       </div>
     </section>
   )
