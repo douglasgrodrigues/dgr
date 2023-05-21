@@ -8,6 +8,7 @@ import Portfolio from './components/portfolio/Portfolio'
 import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import Fullbanner from './components/fullbanner/Fullbanner'
 
 const App = () => {
   fetch(process.env.REACT_APP_API_URL || 'http://localhost:8080/api/v1')
@@ -16,10 +17,10 @@ const App = () => {
   return (
     <>
       <Header />
+      <Fullbanner />
       <Nav />
       <About />
       <Experience />
-      {/* <Services /> */}
       <Portfolio />
       <Testimonials />
       <Contact />

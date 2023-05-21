@@ -40,9 +40,11 @@ const About = () => {
           </div>
 
           <p>
-            Desenvolvedor Front-End e apaixonado por tecnologia, atuo na área tech desde 2019 e durante este tempo pude
-            desenvolver contribuir com diversos produtos que impactaram a vida de milhares de usuários. Desenvolvimento e
-            suporte nas áreas de ERP, Mercado Financeiro e E-commerce são alguns dos meus Backgrounds.
+            Front-End Developer and passionate about technology,
+            I have been working in the tech field since 2019, and during this time,
+            I have been able to contribute to various products that have
+            impacted the lives of thousands of users. Development and support in the
+            areas of ERP, Financial Market, and E-commerce are some of my backgrounds.
           </p>
 
           <a href="#contact" className="btn btn-primary">Let's Talk</a>

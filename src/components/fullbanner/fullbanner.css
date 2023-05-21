@@ -1,0 +1,183 @@
+
+:root {
+  --primaryColor: #282a57;
+  --secondaryColor: #e4e4e4;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+}
+
+.parallax-outer {
+  overflow: hidden;
+}
+
+.parallax {
+  height: 110vh;
+  width: 100%;
+  position: relative;
+}
+
+.parallax img {
+  position: absolute;
+}
+
+
+.mountain-3,
+.mountain-2,
+.mountain-1 {
+  width: 100%;
+  bottom: 0;
+  z-index: 3;
+}
+
+.mountain-3 {
+  @media(max-width: 768px) {
+    bottom: 8%;
+  }
+}
+
+.mountain-2 {
+  bottom: 20px;
+  z-index: 2;
+
+  @media(max-width: 768px) {
+    bottom: 9%;
+  }
+}
+
+.mountain-1 {
+  bottom: 40px;
+  z-index: 1;
+
+  @media(max-width: 768px) {
+    bottom:10%;
+  }
+}
+
+.sun {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+
+  @media(max-width: 768px) {
+    width: 70%;
+    bottom: 5%;
+    top: auto;
+  }
+}
+
+.clouds-left {
+  left: 0;
+  width: 20%;
+}
+
+.clouds-right {
+  right: 0;
+  width: 20%;
+}
+
+.clouds-bottom {
+  bottom: 0px;
+  width: 100%;
+
+  @media(max-width: 768px) {
+    bottom: 10%;
+  }
+}
+
+.stars {
+  top: -550px;
+  left: 0;
+  width: 100%;
+}
+
+.copy {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  color: var(--secondaryColor);
+  text-align: center;
+}
+
+.copy h1 {
+  font-size: 7rem;
+  line-height: 130%;
+}
+
+.copy .subtitle {
+  opacity: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.cta {
+  position: absolute;
+  bottom: 0%;
+  transform: translate(-50%, -50%);  
+  left: 50%;
+  flex-direction: column;
+  align-items: center;
+
+  @media(max-width: 768px) {
+    display: none;
+  }
+}
+
+.cta h3 {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cta .btn-default {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 12px;
+  border-radius: 8px;
+  backdrop-filter: blur(2px);
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+}
+
+.cta .btn-default:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: none;
+  scroll-behavior: smooth;
+}
+
+.about {
+  color: var(--secondaryColor);
+  padding-left: 10%;
+  padding-bottom: 20%;
+}
+
+.about h2 {
+  color: var(--secondaryColor);
+  font-size: 5rem;
+}
+
+.about p {
+  margin-top: 20px;
+  width: 50%;
+}
+
+@media(max-width: 768px) {
+  .copy {
+    width: 80%;
+  }
+
+  .copy h1 {
+    font-size: 3.3rem;
+  }
+
+  .copy .subtitle {
+    font-size: 14px;
+  }
+}

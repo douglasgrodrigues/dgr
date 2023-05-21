@@ -1,13 +1,13 @@
 .portfolio__container{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
 }
 
 .portfolio__item{
   background: rgb(7, 8, 16, 0.5);
   padding: 1.2rem;
-  border-radius: 1rem;
+  border-radius: 8px;
   border: 1px solid transparent;
   transition: var(--transition);
 }
@@ -17,14 +17,18 @@
 }
 
 .portfolio__item-image{
-  border-radius: 1.5rem;
+  border-radius: 8px;
   overflow: hidden;
+  min-height: 16rem;
+
+  @media (max-width: 768px) {
+    min-height: 10rem;
+  }
 }
 
 .portfolio__item h3{
   margin: 1.3rem 0 2rem;
   font-weight: 300;
-  text-transform: uppercase;
 }
 
 .portfolio__item-cta{

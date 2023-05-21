@@ -1,60 +1,57 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
-import IMG4 from '../../assets/portfolio4.jpg'
+import infantus from '../../assets/infantus.png'
+import IMG2 from '../../assets/portfolio2.png'
+import IMG3 from '../../assets/portfolio3.png'
+import IMG4 from '../../assets/portfolio4.png'
 import IMG5 from '../../assets/portfolio5.png'
-import IMG6 from '../../assets/portfolio6.jpg'
-
-import OQUEST from '../../assets/oquestionador.png'
-import CARDIO from '../../assets/cardio4d.png'
+import IMG6 from '../../assets/portfolio6.png'
 
 const data = [
   {
     id: 1,
-    image: IMG1,
-    title: 'Beatriz maranhão',
+    image: infantus,
+    title: 'For kids',
     github: '#',
-    demo: 'https://beatrizmaranhao.vnda.dev/',
+    demo: 'https://infantus.vnda.dev/',
   },
   {
     id: 2,
     image: IMG2,
-    title: 'Kband',
+    title: 'For Accessibility',
     github: '#',
-    demo: 'https://www.kband.com.br/'
+    demo: 'https://powerlite.vnda.dev/'
   },
   {
     id: 3,
     image: IMG3,
-    title: 'Behá',
+    title: 'For Design',
     github: '#',
-    demo: 'https://www.beha.com.br/'
+    demo: 'https://jaderalmeida.vnda.dev/'
   },
   {
     id: 4,
     image: IMG4,
-    title: 'Fran Art & Decor',
+    title: 'For tech',
     github: '#',
-    demo: 'https://www.franarteedecor.com.br/'
+    demo: 'https://vaidetech.vnda.dev/'
   },
   {
     id: 5,
     image: IMG5,
-    title: 'Pictology',
+    title: 'For jewelry',
     github: '#',
-    demo: 'https://www.pictology.com.br/'
+    demo: 'https://stupidoficial.vnda.dev/'
   },
   {
     id: 6,
     image: IMG6,
-    title: 'Grupo Rocha',
+    title: 'For Fashion',
     github: '#',
-    demo: 'https://gruporochasaude.vnda.dev/'
+    demo: 'https://faircloset.vnda.dev/'
   }
 ]
-
+/* 
 const data2 = [
   {
     id: 1,
@@ -70,7 +67,7 @@ const data2 = [
     github: '#',
     demo: 'https://www.cardio4d.com/'
   },
-]
+] */
 
 const Portfolio = () => {
   return (
@@ -96,7 +93,7 @@ const Portfolio = () => {
         }
       </div>
 
-      <div className="more-projects">
+      {/* <div className="more-projects">
         <h2>Other projects</h2>
 
         <div className="container portfolio__container">
@@ -116,7 +113,7 @@ const Portfolio = () => {
             })
           }
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }

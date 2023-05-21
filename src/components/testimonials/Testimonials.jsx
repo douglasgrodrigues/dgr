@@ -16,19 +16,19 @@ import 'swiper/css/autoplay';
 
 const data = [
   {
+    avatar: AVTR3,
+    name: 'Harvard',
+    review: 'cs50x'
+  },
+  {
     avatar: AVTR1,
     name: 'FADERGS',
-    review: 'Curso: Análise e Desenvolvimento de Sistemas (2021)'
+    review: 'Análise e Desenvolvimento de Sistemas'
   },
   {
     avatar: AVTR2,
     name: 'SENAI',
-    review: 'Técnico em Informática (2015)'
-  },
-  {
-    avatar: AVTR3,
-    name: 'Harvard',
-    review: 'cs50x'
+    review: 'Técnico em Informática'
   }
 ]
 
@@ -41,8 +41,8 @@ const Testimonials = () => {
       <Swiper className="container testimonials__container"
         // install Swiper modules
         modules={[Pagination]}
-        spaceBetween={40}
-        slidesPerView={1}
+        spaceBetween={30}
+        slidesPerView={window.screen.width > 768 ? 2 : 1}
         pagination={{ clickable: true }}
       >
         {
@@ -50,7 +50,7 @@ const Testimonials = () => {
             return (
               <SwiperSlide key={index} className="testimonial">
                 <div className="client__avatar">
-                  <img src={avatar} />
+                  <img src={avatar} alt='Logo scholl' />
                 </div>
                 <h5 className="client__name">{name}</h5>
                 <small className="client__review">

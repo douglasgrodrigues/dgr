@@ -1,9 +1,22 @@
 header{
-  height: 100vh;
-  padding-top: 4rem;
+  position: fixed;
+  width: 100%;
   overflow: hidden;
-  background-color: black;
+  background-color: transparent;
   transition: 1s;
+  top: 0;
+  z-index: 10;  
+}
+
+.top-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 5%;
+  //margin-bottom: 3rem;
+}
+
+.logo{
+  width: 5rem;
 }
 
 .background-header > img{
@@ -16,7 +29,7 @@ header{
 
 @keyframes surgir {
   0%   {top:50vh;}
-  100%  {top:4rem;}
+  100%  {top:7.5rem;}
 }
 
 .bgicon{
@@ -50,22 +63,27 @@ header{
   justify-content: center;
 }
 
+.cta a:hover{
+  transform: translateY(10px);
+}
+
 /* ============== Header Socials ============= */
 .header__socials{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 0.8rem;
-  position: absolute;
+  gap: 1rem;
   left: 0;
-  bottom: 3rem;
 }
 
-.header__socials::after{
-  content: "";
-  width: 1px;
-  height: 2rem;
-  background: var(--color-primary);
+.header__socials svg{
+  width: 21px;
+  height: 21px;
+  color: white;
+  transition: 0.3s;
+}
+
+.header__socials svg:hover{
+  color: var(--color-primary);
 }
 
 /* ============== Header ME ============= */
@@ -87,7 +105,7 @@ header{
 .scroll__down{
   position: absolute;
   right: -2.3rem;
-  bottom: 5rem;
+  bottom: 12rem;
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
@@ -95,25 +113,24 @@ header{
 
 /* ======== Media querys =========== */
 @media screen and (max-width: 1024px) {
-  header{
-    height: 68vh;
-  }
-
   .bgicon{
     width: 10rem;
   }
 }
 
 @media screen and (max-width: 600px) {
-  header{
-    height: 100vh;
-  }
-
   .header__container h1{
     font-size: 1.5rem;
   }
 
-  .header__socials,
+  .top-header {
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+    width: 4rem;
+  }
+
   .scroll__down{
     display: none;
   }
@@ -125,7 +142,7 @@ header{
   .me{
     padding: 0;
     margin: 0;
-    bottom: 20%;
+    bottom: 35%;
   }
 
   .me img{
